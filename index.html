@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Grand | Vehicle</title>
+  <meta name="description" content="Browse the complete Grand vehicle database. Compare cars, fuel consumption, trunk capacity, top speed, and detailed specifications.">
+  <meta property="og:title" content="Grand Vehicle Database">
+  <meta property="og:description" content="Complete list of Grand vehicles with detailed specifications, fuel consumption, trunk capacity, and performance data.">
+  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+  <script src="data.js"></script>
+  <script type="text/babel" data-presets="env,react" src="app.js"></script>
+</body>
+
+</html>
